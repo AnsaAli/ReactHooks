@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import UseCallbackProblem from "./components/UseCallbackProblem";
+import UseMemoProblem from "./components/UseMemoProblem";
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     {/* <div>
+      <h1>UseCallBAck hook</h1>
+      <UseCallbackProblem/>
+     </div> */}
+     <div>
+      <h1>UseMemo Hook</h1>
+      <UseMemoProblem/>
+     </div>
+
     </div>
   );
 }
