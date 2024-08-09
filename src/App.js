@@ -3,6 +3,7 @@ import ContextProblem1 from "./components/ContextProblem1";
 import UseCallbackProblem from "./components/UseCallbackProblem";
 import UseMemoProblem from "./components/UseMemoProblem";
 import UseReducerProblem from "./components/UseReducerProblem";
+import UseContextHook from "./components/UseContextHook";
 
 export const UserNameContext = React.createContext();
 export const UserPlaceContext = React.createContext();
@@ -21,11 +22,18 @@ function App() {
       {/* <div>
       <UseReducerProblem/>
      </div> */}
-      <div>
+      {/* <div>
         <UserNameContext.Provider value={"Ansa"}>
           <UserPlaceContext.Provider value={"Ekm"}>
-            {/* component which we want to pass the props */}
+           
             <ContextProblem1 /> 
+          </UserPlaceContext.Provider>
+        </UserNameContext.Provider>
+      </div> */}
+      <div>
+        <UserNameContext.Provider value={'Ansa'}>
+          <UserPlaceContext.Provider value={'Ekm'}>
+            <UseContextHook/>
           </UserPlaceContext.Provider>
         </UserNameContext.Provider>
       </div>
